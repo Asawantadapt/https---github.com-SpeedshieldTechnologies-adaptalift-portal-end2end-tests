@@ -1,6 +1,6 @@
 const loginData = {
     generalLogin : {
-        email : "marktest@gmail.com",
+        email : "samtest@gmail.com",
         password : "12345"
     }
 

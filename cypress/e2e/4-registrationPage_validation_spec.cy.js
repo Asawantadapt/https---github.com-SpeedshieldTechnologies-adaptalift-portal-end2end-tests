@@ -1,5 +1,5 @@
 import { registrationValidationData } from "./4-registrationPage_validations/data"
-import { registerWithDiffPass, registerWithInvalidMb as registerWithInvalidMobile, registerWithExistingEmail } from "./4-registrationPage_validations/functions"
+import { registerWithDiffPass, registerWithInvalidMobile, registerWithExistingEmail } from "./4-registrationPage_validations/functions"
 
 describe('Registration Page validations',()=>{
     const {sameEmail, diffPassword, invalidMb} = registrationValidationData
@@ -10,7 +10,7 @@ describe('Registration Page validations',()=>{
     it('different Password validation',()=>{
         registerWithDiffPass(diffPassword)
     })
-    it.only('Invalid Mobile validation',()=>{
+    it('Invalid Mobile validation',()=>{
         registerWithInvalidMobile(invalidMb)
     })
 })
